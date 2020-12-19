@@ -1,4 +1,4 @@
-# Weather App In Flutter
+# Movie Details Provider In Java
 
 An app which will provies you any movie details.
 
