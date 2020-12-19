@@ -20,7 +20,7 @@ This app provides below details...👇
 
 # Youtube Demo
 
-[![youtube video](https://i9.ytimg.com/vi_webp/WDuQSGGjHP0/sddefault.webp?time=1608324600000&sqp=CPir9P4F&rs=AOn4CLD0yS6x8PzQVhAsOjBg_sM2zWnBCg)](https://youtu.be/WDuQSGGjHP0)
+[<img src="MovieDetails Provider/screenshots/Screenshot (201).png" />](https://youtu.be/WDuQSGGjHP0)
 
 # Created by
 
