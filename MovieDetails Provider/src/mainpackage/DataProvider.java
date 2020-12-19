@@ -76,7 +76,7 @@ public class DataProvider {
 		{
 		URL url = new URL(imagelink);
         BufferedImage img = ImageIO.read(url);
-        File file = new File("C:\\Users\\Sohansinh Rathod\\eclipse-workspace\\MovieDetails Provider\\images\\"+name+".jpg");
+        File file = new File(".\\"+name+".jpg");
         ImageIO.write(img, "jpg", file);
         System.out.println("Picture downloaded succesfully");
 		}
@@ -89,7 +89,7 @@ public class DataProvider {
 			 	URL url = new URL(imagelink);
 		        BufferedImage img1 = ImageIO.read(url);
 		        BufferedImage img=resizeImage(img1,362,500);
-		        File file = new File("C:\\Users\\Sohansinh Rathod\\eclipse-workspace\\MovieDetails Provider\\images\\"+name+".jpg");
+		        File file = new File(".\\"+name+".jpg");
 		        ImageIO.write(img, "jpg", file);
 		        System.out.println("Picture downloaded succesfully");
 			 }
@@ -99,7 +99,7 @@ public class DataProvider {
 				 	URL url = new URL(imagelink);
 			        BufferedImage img1 = ImageIO.read(url);
 			        BufferedImage img=resizeImage(img1,362,500);
-			        File file = new File("C:\\Users\\Sohansinh Rathod\\eclipse-workspace\\MovieDetails Provider\\images\\"+name+".jpg");
+			        File file = new File(".\\"+name+".jpg");
 			        ImageIO.write(img, "jpg", file);
 			        System.out.println("Picture downloaded succesfully");
 			 }

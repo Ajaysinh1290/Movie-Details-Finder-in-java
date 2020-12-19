@@ -152,7 +152,7 @@ public class MovieDetailsFinder extends JFrame implements ActionListener
 	            {
 	            	if(moviename!="noimage")
 					{
-					File deleteimage=new File("./images/"+moviename+".jpg");
+					File deleteimage=new File("./"+moviename+".jpg");
 					deleteimage.delete();
 					}
 	            }
@@ -184,7 +184,7 @@ public class MovieDetailsFinder extends JFrame implements ActionListener
 					this.setCursor(Cursor.WAIT_CURSOR);
 					if(moviename!="noimage")
 					{
-					File deleteimage=new File("./images/"+moviename+".jpg");
+					File deleteimage=new File("./"+moviename+".jpg");
 					deleteimage.delete();
 					}
 					
@@ -242,7 +242,7 @@ public class MovieDetailsFinder extends JFrame implements ActionListener
 				String movieimagelink=DataProvider.getMoviePoster(movielink);
 				movieimagelink=movieimagelink.substring(0,movieimagelink.indexOf("@"))+"@._V1_QL50_SY500_CR0,0,347,500_AL_.jpg";
 				DataProvider.downloadimage(movieimagelink,moviename,movielink);
-				movieimagelabel.setIcon(new ImageIcon("./images/"+moviename+".jpg"));
+				movieimagelabel.setIcon(new ImageIcon("./"+moviename+".jpg"));
 			}
 			catch(Exception exp)
 			{
@@ -255,10 +255,10 @@ public class MovieDetailsFinder extends JFrame implements ActionListener
 				 	URL url = new URL(movieimagelink);
 			        BufferedImage img1 = ImageIO.read(url);
 			        BufferedImage img=DataProvider.resizeImage(img1,362,500);
-			        File file = new File("C:\\Users\\Sohansinh Rathod\\eclipse-workspace\\MovieDetails Provider\\images\\"+moviename+".jpg");
+			        File file = new File("./"+moviename+".jpg");
 			        ImageIO.write(img, "jpg", file);
 			        System.out.println("Picture downloaded succesfully");
-			        movieimagelabel.setIcon(new ImageIcon("./images/"+moviename+".jpg"));
+			        movieimagelabel.setIcon(new ImageIcon("./"+moviename+".jpg"));
 				 }
 				 catch(Exception ex)
 				 {
@@ -268,10 +268,10 @@ public class MovieDetailsFinder extends JFrame implements ActionListener
 					 	URL url = new URL(movieimagelink);
 				        BufferedImage img1 = ImageIO.read(url);
 				        BufferedImage img=DataProvider.resizeImage(img1,362,500);
-				        File file = new File("C:\\Users\\Sohansinh Rathod\\eclipse-workspace\\MovieDetails Provider\\images\\"+moviename+".jpg");
+				        File file = new File("./"+moviename+".jpg");
 				        ImageIO.write(img, "jpg", file);
 				        System.out.println("Picture downloaded succesfully");
-				        movieimagelabel.setIcon(new ImageIcon("./images/"+moviename+".jpg"));
+				        movieimagelabel.setIcon(new ImageIcon("./"+moviename+".jpg"));
 					 }
 					 catch(Exception exp2)
 					 {
